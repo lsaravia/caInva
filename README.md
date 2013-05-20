@@ -1,4 +1,4 @@
-# A spatially splicit multispecies model for vegetal communities
+# A C++ spatially explicit multispecies model for vegetal communities and invasions
 
 This is an stochastic cellular automata (CA) model with the following features
 
