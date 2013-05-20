@@ -8,8 +8,8 @@ This is an stochastic cellular automata (CA) model with the following features
 
 * Random or fixed initial conditions
 
-* Ripley's K calculation, velocity of invasion, and 2D spectral analisys, on the run. 
+* Ripley's K calculation, velocity of invasion, and 2D spectral analysis, on the run. 
 
-* Configuration of multiple simulations with different parameters convinations
+* Configuration of multiple simulations with different parameters combinations
 
 More details are given in the file descripcionModelo.md (SPANISH)
