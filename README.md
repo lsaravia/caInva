@@ -12,4 +12,4 @@ This is an stochastic cellular automata (CA) model with the following features
 
 * Configuration of multiple simulations with different parameters convinations
 
-More details are given in the file descripcionModelo.txt (SPANISH)
+More details are given in the file descripcionModelo.md (SPANISH)

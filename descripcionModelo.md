@@ -1,4 +1,4 @@
-PARAMETROS de Linea de Commandos
+# PARAMETROS de Linea de Commandos
 
 gcainva file.ctl file.inp
 
@@ -86,11 +86,11 @@ set: archivo de condiciones iniciales -> siembra al azar individuos de cierta es
 	especie edad cantidad "posicion x maxima" habitat
 	
 
-Archivo PARAMETROS de simulaciones (.inp)
+# Archivo PARAMETROS de simulaciones (.inp)
 
 sp MaximunSurvivalDistance AdultAge PJuvenilMortality PAdultMortality MeanDispersalDistance ParmDispersal NRecruits DispersalNorm NeighSurvivalDistance NeighSurvivalSlope NeighSurvivalOrd ShadeTolerance
 
-PARAMETROS de ESPECIES
+# PARAMETROS de ESPECIES
 sp: numero de especie menos 1 
 
 spName:
