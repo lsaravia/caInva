@@ -1,0 +1,55 @@
+HIPOTESIS
+
+MANTENIMIENTO DE TALARES A NIVEL LANDSCAPE
+El mantenimiento de los  bosques de tala podria estar relacionado con el abandono de plantaciones
+Dado que no se produce regeneracion en el bosque, pero si en estas plantaciones.
+Esta rotacion a nivel landscape aseguraria la presencia de talares, en el parque. La pregunta a 
+todo esto es como influenciaria la invasion de ligustro.
+
+ANALISIS DEL BOSQUE SIN INVASORAS
+
+1. Si tengo la especies nativa Jodina=0, Coronillo=1, Tala=2 y la exotica Ligustro=3
+con los siguientes parametros (g99.inp)
+
+400 100
+1000 1 0
+2 E D 4
+0  200  15  .20  .01  0.16 5.3 02  G 3 F
+1  200  15  .20  .01  0.16 5.3 01  G 3 F
+2  200  15  .20  .01  0.16 5.3 00  G 3 F
+3  200  15  .20  .01  0.19 5.6 40  G 3 F
+
+
+y siembro adultos al azar
+
+0 30 33  0
+1 30 152 0
+2 30 105 0
+
+(3 30 25 10) 
+
+el bosque se extingue. (archivo g99.out) 
+
+Pero al aumentar la cantidad de renovales a 03, se convierte en un Jodinal.
+
+1.2 Al aumentar la dimension a 400 x 400 (g99-01.inp,g99-01.out) se convierte en un Jodinal
+	ver cual es la dimension minima del sistema para el cual el efecto borde es suficientemente
+	pequeño
+	
+1.2.1 Al disminuir la jodina a 01 hay codominancia de jodina y coronillo g99-01.01.out
+
+1.3 Si hay episodios de produccion de gran cantidad de renovales por parte de Tala/Coronillo
+cada cuanto y que intensidad tendrian que tener para mantener las poblaciones sin extinguirse.
+
+------------
+2.
+
+Como se modifica 1) si la dispersion es exponencial en vez de Gamma?
+--> El bosque no se extinge usando 02 para Jodina, y se convierte en un Jodinal 
+    esta conclusion es dependiente de la dimension del sistema y del hecho que los
+    bordes son disipativos.
+
+Cual es la consecuencia con respecto a 1) de la existencia de cordones
+
+------------
+3. De que depende la densidad de adultos? Ver analisis de sensibilidad.

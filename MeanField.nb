@@ -1,0 +1,126 @@
+(***********************************************************************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used on any computer system with Mathematica 3.0,
+MathReader 3.0, or any compatible application. The data for the notebook 
+starts with the line of stars above.
+
+To get the notebook into a Mathematica-compatible application, do one of 
+the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing the 
+word CacheID, otherwise Mathematica-compatible applications may try to 
+use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+***********************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      2594,         79]*)
+(*NotebookOutlinePosition[      3304,        104]*)
+(*  CellTagsIndexPosition[      3260,        100]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(Solve[
+      \(-a\)\ o\ pa + g\ pa\ \((1 - \((pa + o\ pa)\))\) - \ 
+          o\ pa\ \((d + \ da\ pa + \ dj\ o\ pa)\) == 0, pa]\)], "Input"],
+
+Cell[BoxData[
+    \({{pa \[Rule] 0}, {
+        pa \[Rule] \(g - a\ o - d\ o\)\/\(g + da\ o + g\ o + dj\ o\^2\)}}\)], 
+  "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\nSolve[{a\ pj - \ u\ pa == 0, 
+        \(-a\)\ pj + \ g\ pa \((1 - \((pa + pj)\))\) - 
+            pj\ \((d + da\ pa + dj\ pj)\) == 0}, {pa, pj}]\)\)], "Input"],
+
+Cell[BoxData[
+    \({{pa \[Rule] 0, pj \[Rule] 0}, {
+        pa \[Rule] 
+          \(a\ \((a\ g - a\ u - d\ u)\)\)\/\(a\^2\ g + a\ da\ u + a\ g\ u + 
+              dj\ u\^2\), 
+        pj \[Rule] 
+          \(-\(\(u\ \((\(-a\)\ g + a\ u + d\ u)\)\)\/\(a\^2\ g + a\ da\ u + 
+                  a\ g\ u + dj\ u\^2\)\)\)}}\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"Microsoft Windows 3.0",
+ScreenRectangle->{{0, 800}, {0, 538}},
+WindowSize->{772, 468},
+WindowMargins->{{2, Automatic}, {Automatic, 2}},
+PrintingCopies->1,
+PrintingPageRange->{Automatic, Automatic}
+]
+
+
+(***********************************************************************
+Cached data follows.  If you edit this Notebook file directly, not using
+Mathematica, you must remove the line containing CacheID at the top of 
+the file.  The cache data will then be recreated when you save this file 
+from within Mathematica.
+***********************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1731, 51, 160, 3, 30, "Input"],
+Cell[1894, 56, 129, 3, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2060, 64, 183, 3, 50, "Input"],
+Cell[2246, 69, 332, 7, 44, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+
+(***********************************************************************
+End of Mathematica Notebook file.
+***********************************************************************)
+

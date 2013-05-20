@@ -1,0 +1,7 @@
+*.zip
+*.o
+*.xls
+*.exe
+*~
+*.bak
+simulations/

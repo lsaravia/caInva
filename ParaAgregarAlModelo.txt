@@ -1,0 +1,98 @@
+INFORME CIC
+
+1) Analisis espectral y/ ripley'k de talares. Habria que repetir el ensayo 
+   de simulaciones de patrones espaciales pero utilizando el modelo y los parametros
+   del mismo y no las simulaciones excel, las simulaciones Excel podrian ir para el informe.
+   
+2) Tomar datos de todas las referencias sobre los distintos parms
+
+3) Ejecutar POMAC (agregar espectro y/o Ripley)
+
+4) Transiente o en equilibrio??
+
+5) Discutir resultados con respecto a la regeneracion del Tala.
+
+6) Ver de hacerlo de tal manera que sea lo mas parecido a un o unos capitulos de la TESIS
+   Se podria incluir el patron espacial en gral para no utilizar los datos de Lucila, 
+   y sacar datos sobre los parametros de la tesis de Arturi. 
+   
+PREGUNTAS HIPOTESIS Y COMENTARIOS SOBRE TALARES Y MODELO
+
+- El patron espacial agrega mucha informacion que es posible utilizar para validar el modelo.
+- Talares autoinhibicion o competencia con herbaceas.
+- Colonizacion, el patron espacial encontrado es compatible con que TAL y COR 
+  colonizan al mismo tiempo y no conque COR coloniza despues. (Lo cual no seria compatible con 
+  existencia del talar juvenil, es puro talar o tambien hay coronillos)
+
+
+---------------------------------------------------------------------------------------------
+PARA AGREGAR
+  
+- Segun Wills & Condit 1999 El area basal (tamaño) no importa sino el nro, por lo que este tipo de 
+  interacciones no seria fundamental para la diversidad.
+
+- Gap dynamics [Yokozawa, 1998 #1464], la dinamica de gaps no es fundamental
+  con respecto al nro de especies [Hubbell, 1999 #1021][Wills, 1999 #1443].
+  Con respecto a disturbios de mayor escala si hay un efecto en la diversidad 
+  (Vandermeer 1995 Pedir).
+
+- Mortalidad de juveniles dependiente de la distancia (paper de Barot y paper de Packer), 
+  La mortalidad parece ser estar negativamente relacionada a la cantidad de individuos de la misma 
+  especie dentro de cierta distancia y este efecto se produce antes que lleguen
+  un dbh de 1 cm (es decir cuando son juveniles) [Wills, 1999 #1443]. Esto es compatible  
+  con la hipotesis de Janzen-Connell sobre la actividad frecuency-dependent de los patogenos.
+  
+- Efecto negativo de la cantidad total en el reclutamiento (las especies mas afectadas por el 
+  conspecific crowding son las mas afectadas por el overall crowding), esto puede ser 
+  el resultado de algun recurso fisico limitante. (Por que esto es por recurso y la mortalidad 
+  por un efecto biotico????? como se deriva esto de los datos de Wills 1999)
+
+- Dispersion de larga distancia, eventos raros (frugivoria y/o otros) 
+  Fundamental para velocidad de Invasion [Neubert, 2000 #1167][Higgins, 1999 #1187]
+
+- Poner calculo de la velocidad por separado, como ya hice para la densidad en la opcion pomac
+  esto permitiria un calculo mas rapido luego que la especie llego a la otra punta.
+  O poner una opcion donde solo calcule la densidad 
+  
+
+---------
+PARA EXPERIMENTAR
+
+PRIMERO VER COEXISTENCIA DE 2 ESPECIES
+
+TRANSIENTES - ver que el tiempo que dura el transiente aumenta con la cantidad de especies
+
+Interaccion de parametro mortalidad de adultos (Seria como medida de control) y los 
+otros parametros de Life History, ver cuando es más efectivo como medida de control.
+
+---------
+
+HIPOTESIS para verificar con el modelo
+- El modelo Nulo de Hubbell no seria compatible con el patron espacial [Hubbell, 1979 #1627][Yu, 1998 #1621]
+
+DIVERSIDAD EN BOSQUES TROPICALES Y SUBTROPICALES
+- La dinamica de gaps no tiene importancia en la diversidad
+
+- A medida que aumenta la extencion del disturbio si es importante para la diversidad
+
+
+- El paper de [Hubbell, 1999 #1021] se testea la siguiente hipotesis
+
+If gaps promote species tree richness by providing a gradient of regeneration microsites of 
+any resource, then: species richn
+
+
+Basicamente no se sabe como aumenta la cantidad de nichos disponibles con la formacion de gaps, 
+si este aumento es menor que el aumento de la densidad la riqueza por stem no va a aumentar, 
+y el mecanismo de niche partitioning puede estar actuando en todo el bosque y no particularmente 
+en los gaps.
+
+En conclusion los gaps ayudan a mantener la diversidad pero solo por albergar mayor densidad 
+de stems [Brokaw, 2000 #1616]. Aunque eso no invalidaria la existencia del mecanismo de niche
+partitioning.
+
+
+- No se ha dicho demasiado sobre la hipotesis de "Spatial competition" de tilman y su 
+posible accion en las tropical forests.
+
+

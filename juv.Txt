@@ -1,0 +1,3 @@
+RunNo	Specie	DenAd	DenJu	VelAd	Velju
+0	JUV01	0	20	0	0
+0	JUV01	0	20	0	0

@@ -1,0 +1,1 @@
+RunNo	Specie	DenAd	DenJu	VelAd	Velju

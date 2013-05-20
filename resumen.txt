@@ -1,0 +1,42 @@
+Modelos de Invasion basados en el individuo y espacialmente explicitos:
+Un analisis de sensibilidad con datos de los Talares de Magdalena.
+
+Los modelos de reaccion-difusion han sido los mas utilizados para
+simular procesos de invasiones biologicas. Aunque han tenido exito en
+describir las invasiones a una escala biogeografica no son apropiados
+para diferenciar que procesos son mas importantes a nivel poblacional.
+En este contexto los modelos basados en el individuo que incorporan la
+estructura espacial pueden ser de gran utilidad. En este trabajo
+analizamos la influencia de variar los distintos parametros del modelo
+sobre la velocidad de invasion. Esto permitira ajustar con mayor
+precision los parametros mas sensibles y plantear nuevas hipotesis para
+ser probadas con estudios de campo. Para esto se vario cada parametro en
+forma individual dentro de limites estimados a partir de datos de campo
+obtenidos como parte del estudio de la invasion por ligustro de los
+talares de Magdalena. Los parametros que mas influyeron en la velocidad
+de la invasion fueron la Distancia media de dispersion de los renovales,
+el reclutamiento y la edad de madurez reproductiva. Este ultimo es el
+unico parametro del modelo utilizado que se relaciona con el crecimiento
+diferencial de las especies exoticas y nativas, esto sugiere que el 
+modelo deberia incluir una descripcion mas detallada del crecimiento.
+
+SARAVIA1 L.A. y L. D. BOFFI LISSIN2. 1-Dto.Cs.Básicas. U.N.Luján 2-
+Ecología de Comunidades FCEyN UBA. Modelos espacialmente explícitos: un
+análisis de sensibilidad con datos de los Talares de Magdalena.
+
+Los modelos espacialmente explícitos permiten diferenciar los procesos
+más importantes a nivel poblacional y plantear nuevas hipótesis. En este
+trabajo simulamos, mediante un modelo de este tipo, la invasión por
+especies vegetales exóticas. Además, analizamos la influencia de variar
+los distintos parámetros del modelo sobre el proceso invasivo. Esto
+permitirá detectar aquellos más sensibles para optimizar la toma de
+datos a campo. En la construcción del modelo se eligieron parámetros que
+puedan ser cuantificables a campo. Mediante un estudio sobre la invasión
+de los talares de Magdalena por el Ligustrum lucidum, se obtuvieron los
+límites dentro de los cuales variar cada parámetro en forma individual.
+Los parámetros que más influyeron en la velocidad de la invasión fueron
+la distancia media de dispersión, el reclutamiento y la edad a la que
+alcanzan la madurez reproductiva. Este análisis mostró que para
+perfeccionar este modelo, deberían tenerse en cuenta descriptores del
+crecimiento específico.
+
