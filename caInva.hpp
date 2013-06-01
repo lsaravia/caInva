@@ -8,6 +8,8 @@
 #include "smattpl.hpp"
 #include "cellInva.hpp"
 #include "cell.hpp"
+#include "ran.h"
+
 using namespace std;
 
 struct DensVar
@@ -99,6 +101,8 @@ class CAInva : public CABase
 		bool NewRun;        // True cuando empieza una nueva corrida, lo resetea PrintDensityAge
 		int NoHabitat;
 
+        Ranf1 ran;
+
 	void JumbleXY(CellEvent * pos, int max);
 	void EvalCellB1(int &x,int &y);
 		
@@ -144,6 +148,9 @@ class CAInva : public CABase
 
 	void ReadSetSeed( char * fname);
 	void RandomSetSeed(int sp,unsigned age, int no, int minX,int habitat=0);
+	int Rand(int num);
+	double Rand();
+
 	int  PrintDensityAge(string const & fname,char *iname, int maxT);
 	int  PrintDensityAge(ostream & ost, int maxT);
 	
@@ -175,6 +182,16 @@ class CAInva : public CABase
 	void VelRegress(int specie, char * iname, char * oname, char * pname);
 	int InitParms();
 	};
+
+inline double CAInva::Rand() { 
+	//return ranf();
+	return ran.doub(); 
+	};
+
+inline int CAInva::Rand(int num) {
+		return (ran.int64() % (num+1)); // between 0 and num inclusive 
+		//return ignuin(0,num);
+        };
 
 
 #endif

@@ -23,7 +23,6 @@
 
 #include "fortify.h"
 
-#include "randlib.h"
 #include "bgi.hpp"
 //#include "spectral.h"
 
@@ -254,7 +253,7 @@ void CAInva::Growth(int x,int y)
 					
 						// Exponencial    
 						case 'X':
-							dis = genexp(dd);
+							dis= -log(Rand())/dd;
 							rnd = Rand();
 							ang = rnd * Pi2;
 							dx = cos( ang ) * dis ;
