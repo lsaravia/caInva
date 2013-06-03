@@ -1,0 +1,821 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"d1_",
+				"d1_delta"
+			],
+			[
+				"bib",
+				"bib"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "caSimul.cpp",
+			"settings":
+			{
+				"buffer_size": 9214,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dis.ctl",
+			"settings":
+			{
+				"buffer_size": 304,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/leonardo/Dropbox/CVAcademicos/ApplicationLetter.md",
+			"settings":
+			{
+				"buffer_size": 2990,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/media/Leo/cpp/CaNew/Invasions/caInva.cpp",
+			"settings":
+			{
+				"buffer_size": 8806,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/media/Leo/cpp/CaNew/Neutral/IpsNeutral.cpp",
+			"settings":
+			{
+				"buffer_size": 9193,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/media/Leo/cpp/CaNew/Invasions/caInva.hpp",
+			"settings":
+			{
+				"buffer_size": 5218,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/media/Leo/cpp/CaNew/Neutral/IpsNeutral.h",
+			"settings":
+			{
+				"buffer_size": 5227,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/media/Leo/cpp/CaNew/Invasions/ran.h",
+			"settings":
+			{
+				"buffer_size": 1327,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/media/Leo/cpp/CaNew/Invasions/descripcionModelo.md",
+			"settings":
+			{
+				"buffer_size": 6495,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/leonardo/Dropbox/SpatialPatternsPlant/ELE - Review.txt",
+			"settings":
+			{
+				"buffer_size": 25607,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/leonardo/Dropbox/SpatialPatternsPlant/when_can_we_detect_process.md",
+			"settings":
+			{
+				"buffer_size": 32072,
+				"line_ending": "Unix",
+				"name": "# when can we detect A process looking at the spat"
+			}
+		}
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"syp",
+				"Set Syntax: Pandoc"
+			],
+			[
+				"sy",
+				"Set Syntax: Pandoc"
+			],
+			[
+				"syr",
+				"Set Syntax: R"
+			],
+			[
+				"synr",
+				"Set Syntax: R"
+			],
+			[
+				"synp",
+				"Set Syntax: Pandoc"
+			],
+			[
+				"syn",
+				"Set Syntax: Pandoc"
+			],
+			[
+				"synR",
+				"Set Syntax: R"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Add eta-squared abbreviation based n LaTeX definition"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"previ",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"mark",
+				"Markdown Preview: open Markdown Cheat sheet"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"prev",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"contr",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/leonardo/Dropbox/CVAcademicos/ResearchStatement.md",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/dis.rpk",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/dis.Txt",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/caSimul.mak",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/dis.inp",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/dis.ctl",
+		"/media/Leo/cpp/CaNew/Invasions/caInvaIO.cpp",
+		"/media/Leo/cpp/CaNew/Invasions/caInvaStats.cpp",
+		"/media/Leo/cpp/CaNew/Invasions/castats.cpp",
+		"/media/Leo/cpp/CaNew/Invasions/mcaInva.cpp",
+		"/media/Leo/cpp/CaNew/IpsMultiContact/IpsMultiContactAux.cpp",
+		"/media/Leo/cpp/CaNew/IpsMultiContact/IpsMultiContactStats.cpp",
+		"/media/Leo/cpp/CaNew/IpsMultiContact/IpsMultiContact.cpp",
+		"/media/Leo/cpp/CaNew/IpsMultiContact/IpsMultiContact.h",
+		"/media/Leo/cpp/CaNew/Neutral/MainIPS.cpp",
+		"/media/Leo/cpp/CaNew/Neutral/IpsNeutralCont.cpp",
+		"/media/Leo/cpp/CaNew/Neutral/IpsNeutralStats.cpp",
+		"/media/Leo/cpp/CaNew/Neutral/IpsNeutral.h",
+		"/media/Leo/cpp/CaNew/Neutral/IpsNeutral.cpp",
+		"/media/Leo/cpp/CaNew/IpsMultiContact/MainIPS.cpp",
+		"/media/Leo/cpp/CaNew/cabase.cpp",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/patch.set",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/Test.set",
+		"/media/Leo/cpp/CaNew/Invasions/descripcionModelo.md",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/test.ctl",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/test.inp",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/dis.dat",
+		"/home/leonardo/Dropbox/Pandoc/git_manuscript.md",
+		"/home/leonardo/Dropbox/DatosIre/Meteo_stat.txt",
+		"/home/leonardo/Dropbox/DatosIre/TablaModelosCorregida.txt",
+		"/home/leonardo/Dropbox/SpatialPatternsPlant/ELE - Review.txt",
+		"/home/leonardo/Dropbox/Pandoc/when can we detect A process looking at the spatial pattern.md",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/bci452.par",
+		"/home/leonardo/Dropbox/LabBiologia/LOF/Animales.md",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/bciExpZa-90Reord.sed",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/test1.sed",
+		"/home/leonardo/blog/source/_includes/custom/intro.html",
+		"/media/Leo/cpp/SpatialAnalysis/testRandomizations.cpp",
+		"/media/Leo/cpp/SpatialAnalysis/rnzMainRpk.cpp",
+		"/media/Leo/cpp/CaNew/Invasions/.gitignore",
+		"/media/Leo/cpp/CaNew/Invasions/README.md",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/simul.sh",
+		"/media/Leo/cpp/CaNew/Invasions/caInva.cpp",
+		"/media/Leo/cpp/CaNew/Invasions/resumen.txt",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/juv256.Txt",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/juv400.set",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/patch.ctl",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/patch5.sed",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/caSimul.cpp",
+		"/media/Leo/cpp/CaNew/Invasions/descripcionModelo.txt",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/rnd.inp",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/rnd.set",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/rpkb.rsp",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/juv256.g",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/juv256.age",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/juv128.plt",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/juv.dat",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/juv.dat.txt",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/dis1.Txt",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/dis1.dat",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/gcaSimul.mak",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/geany_run_script.sh",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/rpkaux.cpp",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/rnd1.sed",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/juv.ctl",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/juv.inp",
+		"/media/Leo/cpp/SpatialAnalysis/testRipleyK.cpp",
+		"/media/Leo/cpp/SpatialAnalysis/RipleyTriangle.cpp",
+		"/media/Leo/cpp/SpatialAnalysis/RipleyK.cpp",
+		"/media/Leo/cpp/CaNew/Invasions/test.ctl",
+		"/media/Leo/cpp/CaNew/Invasions/haidr.sed",
+		"/media/Leo/cpp/CaNew/Invasions/Sppattal/Plan de Trabajo para informe final.txt",
+		"/media/Leo/cpp/CaNew/Invasions/Sppattal/dist.cpp",
+		"/media/Leo/cpp/CaNew/Invasions/juv.age",
+		"/media/Leo/cpp/CaNew/Invasions/test.rpk",
+		"/media/Leo/cpp/CaNew/Invasions/caInva.mak",
+		"/media/Leo/cpp/CaNew/Invasions/juv1.dat",
+		"/media/Leo/cpp/CaNew/Invasions/juv1.dat.txt",
+		"/media/Leo/cpp/CaNew/Invasions/patch5.sed",
+		"/media/Leo/cpp/CaNew/Invasions/test.spe",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/pomac.lin",
+		"/home/leonardo/Dropbox/DatosIre/Meteo_mens.txt",
+		"/media/Leo/cpp/CaNew/Invasions/g2000TalCor.lin",
+		"/media/Leo/cpp/CaNew/Invasions/hipotesis.txt",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/bci452.inp",
+		"/media/Leo/cpp/CaNew/Invasions/CaVel.mak",
+		"/media/Leo/cpp/CaNew/Invasions/ha400x100.sed",
+		"/media/Leo/cpp/CaNew/Invasions/ha100x100.sed",
+		"/media/Leo/cpp/CaNew/Invasions/simulations/ELE - Review.txt",
+		"/home/leonardo/Dropbox/DatosIre/Meteo_stat.txt.old",
+		"/media/Leo/cpp/CaNew/Invasions/juv.rpk",
+		"/media/Leo/cpp/CaNew/Invasions/test100.ctl",
+		"/media/Leo/cpp/CaNew/Invasions/test100.Txt",
+		"/media/Leo/cpp/CaNew/Invasions/g2000TalCor.ctl",
+		"/media/Leo/cpp/CaNew/Invasions/pomac.lin",
+		"/media/Leo/cpp/CaNew/Invasions/pomac.ctl",
+		"/media/Leo/cpp/CaNew/Invasions/test100.inp",
+		"/media/Leo/cpp/CaNew/Invasions/GCAINVA.mak",
+		"/home/leonardo/Dropbox/DatosIre/Paper1.md",
+		"/media/Leo/cpp/CaNew/Invasions/ParaAgregarAlModelo.txt",
+		"/media/Leo/cpp/CaNew/PeriphytonBio/CaPeriBio.cpp",
+		"/media/Leo/cpp/CaNew/PeriphytonBio/McaPeriBio.cpp",
+		"/home/leonardo/Dropbox/LabBiologia/LOF/TemasParaTrabajoFinal.md",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/bciPowZDensity.txt",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/bci452Z.par",
+		"/home/leonardo/Dropbox/Pandoc/Default (Linux).sublime-keymap",
+		"/home/leonardo/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/bciExpZDensity.txt",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/pomacPow.lin",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/pomac_Exp.lin",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/makefile",
+		"/home/leonardo/Dropbox/LabBiologia/LOF/TheRingOfLife.es.md",
+		"/home/leonardo/Dropbox/BCI/BCI1995Sp.sed",
+		"/home/leonardo/Dropbox/BCI/BCI1982Sp.sed",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/s.bciExpZa-10.sed",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/t.bciExpZa-10.sed",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/bciExpZa-5.sed",
+		"/home/leonardo/Academicos/cpp/CaNew/Neutral/makefile",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/bciExpZa-10.sed",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/bciExpZamfOrd.txt",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Fun_Multi_patt.r",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/mpnc.md",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/bciExpDensity.txt",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/bciExpZ005Density.txt",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Multi_patt.Rmd",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/bciExpZ005mfOrd.txt",
+		"/home/leonardo/Dropbox/Multifractals/NaturalCommunities/Simul/bciEtienneZDensity.txt",
+		"/home/leonardo/Dropbox/LabBiologia/LOF/Parcial1-2013.md"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\n						",
+			"ExpDispersal",
+			"IPSNeutral",
+			"\nrand",
+			"rand",
+			"",
+			"",
+			"0.0287",
+			"SRS",
+			"#             ",
+			"3",
+			"0.00018",
+			"0.00014",
+			"0.001",
+			"0.375",
+			"2.2",
+			"grows",
+			"Proffesor",
+			"development",
+			"Defendida",
+			"automata",
+			"in",
+			"bci",
+			"+-",
+			"Delta",
+			"D1",
+			"Fig7",
+			"Figs3",
+			"Fig6a",
+			"FigS3",
+			"Fig6a",
+			"Figs3",
+			"Fig6",
+			"FigS3",
+			"Fig6b",
+			"Fig6",
+			"fig6a",
+			"Fig6",
+			"Fig6a",
+			"delta_d1",
+			"CI",
+			"compBCI",
+			"Fig6a",
+			"aislated",
+			"MFA",
+			"regr",
+			"2 ",
+			"0.701",
+			".",
+			"0.301",
+			".",
+			"0.",
+			"if(!exists(\"sp\"))",
+			"sp <- sa",
+			"\\delta",
+			"rosenz",
+			"\\(.*\\)$",
+			"\\((.*[0-9]{0,4})[]*\\)$",
+			"\\((.*[0-9]{0,4})\\)$",
+			"\\((.*[0-9]{4,4})\\)$",
+			"\\((.+[0-9]{4,4})\\)$",
+			"\\(.+[0-9]{4,4}\\)$",
+			"(",
+			" et al. ",
+			")",
+			"(",
+			")",
+			"(",
+			")",
+			"(",
+			"Rosenzweig1995",
+			"[@",
+			"(",
+			"Rosenzweig",
+			" (",
+			"(",
+			"log(\\epsi",
+			"μ",
+			"⁠",
+			")⁠",
+			"1992",
+			"Sommer",
+			"ε",
+			"[@",
+			" @",
+			"prefix"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"automata",
+			"\\Delta",
+			"\\mu",
+			"",
+			")",
+			")⁠",
+			"\\epsilon"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "caSimul.cpp",
+					"settings":
+					{
+						"buffer_size": 9214,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5596,
+								5596
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5424.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "dis.ctl",
+					"settings":
+					{
+						"buffer_size": 304,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/leonardo/Dropbox/CVAcademicos/ApplicationLetter.md",
+					"settings":
+					{
+						"buffer_size": 2990,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2345,
+								2345
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1026.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/media/Leo/cpp/CaNew/Invasions/caInva.cpp",
+					"settings":
+					{
+						"buffer_size": 8806,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/media/Leo/cpp/CaNew/Neutral/IpsNeutral.cpp",
+					"settings":
+					{
+						"buffer_size": 9193,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5897,
+								5897
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5402.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/media/Leo/cpp/CaNew/Invasions/caInva.hpp",
+					"settings":
+					{
+						"buffer_size": 5218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5015,
+								5015
+							],
+							[
+								5088,
+								5088
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3017.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/media/Leo/cpp/CaNew/Neutral/IpsNeutral.h",
+					"settings":
+					{
+						"buffer_size": 5227,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4527,
+								4527
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2817.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/media/Leo/cpp/CaNew/Invasions/ran.h",
+					"settings":
+					{
+						"buffer_size": 1327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								17
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/media/Leo/cpp/CaNew/Invasions/descripcionModelo.md",
+					"settings":
+					{
+						"buffer_size": 6495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5795,
+								5795
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 132.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/leonardo/Dropbox/SpatialPatternsPlant/ELE - Review.txt",
+					"settings":
+					{
+						"buffer_size": 25607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5603,
+								5603
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 5,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1662.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/home/leonardo/Dropbox/SpatialPatternsPlant/when_can_we_detect_process.md",
+					"settings":
+					{
+						"buffer_size": 32072,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7835,
+								7835
+							]
+						],
+						"settings":
+						{
+							"auto_name": "# when can we detect A process looking at the spat",
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1494.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 97.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
