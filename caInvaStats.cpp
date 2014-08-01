@@ -5,7 +5,7 @@
 //
 
 #include "caInva.hpp"
-#include <string>
+#include <cstring>
 #include <math.h>
 
 #include "Spectral.h"
@@ -16,7 +16,7 @@
 #include <fstream>
 #include <iomanip>
 #include <stdio.h>
-#include "fortify.h"
+//#include "fortify.h"
 
 #ifndef  __GO32__
 #define log2(x) log(x)/log(2)
@@ -250,9 +250,9 @@ int CAInva::CalcSpectrum(string const &type,int xTL, int yTL, int xLen, int yLen
 	simplmat <double> rper;		// Rearranged periodogram
 
 	SpectralAnalysis sa;
-	Fortify_CheckAllMemory();
+	//Fortify_CheckAllMemory();
 	data.resize(yLen,xLen,0.0);
-	Fortify_CheckAllMemory();
+	//Fortify_CheckAllMemory();
 	polper.fill( 0.0 );
 	
 	int yBR=yTL+yLen;
@@ -327,15 +327,15 @@ int CAInva::CalcSpectrum(string const &type,int xTL, int yTL, int xLen, int yLen
 	}
 	
 	double var;
-	Fortify_CheckAllMemory();
+	//Fortify_CheckAllMemory();
 	if( int(log2(rows))==log2(rows) && int(log2(cols))==log2(cols) )
 		var = sa.Spec2D(data,dout); // Calculates the periodogram using FAST FOURIRER
 	else
 		var = sa.Period2D(data,dout); // Calculates the periodogram
 
-	Fortify_CheckAllMemory();
+	//Fortify_CheckAllMemory();
 	sa.Spekout(rows,cols,dout,rper); // Rearranges the periodogram
-	Fortify_CheckAllMemory();
+	//Fortify_CheckAllMemory();
 	sa.Polar2D(rows,cols,rper,polper); // Calculates the Polar Spectrum
 
 	return 1;
@@ -783,7 +783,7 @@ int CAInva::PrintDensityAge(ostream & ost, int maxT)
 //
 int CAInva::CalcWinDensity(string const &type,int xTL, int yTL, int xLen, int yLen, long & noIndivid)
 {
-	Fortify_CheckAllMemory();
+	//Fortify_CheckAllMemory();
 	
 	int yBR=yTL+yLen;
 	int xBR=xTL+xLen;

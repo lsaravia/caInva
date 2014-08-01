@@ -1,3 +1,6 @@
+#ifndef RAN_H
+#define RAN_H
+
 #include <ctime>
 
 typedef unsigned long long int Ullint;
@@ -10,6 +13,13 @@ struct Ranf1 {
 		if( j==0 ) j=time(NULL);
 		v ^= j;
 		v = int64();
+	}
+
+	inline void init(Ullint j){
+		if(j>0){
+		v = 4101842887655102017LL ^ j;
+		v = int64();
+		}
 	}
 
 	inline Ullint int64() {
@@ -56,3 +66,5 @@ struct Ranfib {
 	}
 
 };
+
+#endif

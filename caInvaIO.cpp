@@ -5,7 +5,7 @@
 //
 
 #include "caInva.hpp"
-#include <string>
+#include <cstring>
 #include <iomanip>
 #include <stdio.h>
 
@@ -21,7 +21,7 @@
 
 
 
-#include "fortify.h"
+//#include "fortify.h"
 #include "bgi.hpp"
 
 int SpecieAge::Scan(char * buff)

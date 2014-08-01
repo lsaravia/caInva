@@ -1,9 +1,9 @@
 #ifndef __CellInva_HPP
 #define __CellInva_HPP
 
-#ifdef __GNUC__
-#include "fortify.h"
-#endif
+//#ifdef __GNUC__
+//#include "fortify.h"
+//#endif
 
 #define uchar unsigned char
 

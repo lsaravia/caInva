@@ -13,7 +13,7 @@
 
 #include "caInva.hpp"
 #include "bgi.hpp"
-#include "fortify.h"
+//#include "fortify.h"
 
 #ifdef __DJGPP__
 #include <conio.h>
@@ -61,7 +61,7 @@ int main(int argc, char * argv[])
 {
 	static bool priPomac=true;
 	bool pomacEarlyBreak=false;
-    Fortify_EnterScope();
+    //Fortify_EnterScope();
     CAInva ca;
 	CaInvaParms p;
 
@@ -76,7 +76,7 @@ int main(int argc, char * argv[])
     }
     else if( argc == 3 )
 	{
-		Fortify_CheckAllMemory();
+		//Fortify_CheckAllMemory();
 		ReadParms(argv[1],p);
 		ca.Init( p.noSpecies, p.dimX, p.dimY, p.rndSeed);
 		if(p.runLineParms=='Y')
@@ -112,7 +112,7 @@ int main(int argc, char * argv[])
 			privez = false;
 		else
 		{
-			Fortify_CheckAllMemory();
+			//Fortify_CheckAllMemory();
 			ca.Reset();
 			if( strstr(p.seedFile,"sed")!=NULL )
 				if( !ca.ReadSeed(p.seedFile) )	// Lee mapa ASCII de las especies y edades
@@ -153,7 +153,7 @@ int main(int argc, char * argv[])
 		for(i=0; i<p.nEvals; i++)
 		{
 // 			ca.Evaluate();
-//			Fortify_CheckAllMemory();
+//			//Fortify_CheckAllMemory();
             ca.EvaluateED();
 
 			if( ((i+1) % p.inter)==0 || i==0 )
@@ -177,7 +177,7 @@ int main(int argc, char * argv[])
 						cerr << "Evaluation " << (i+1) << endl;
 					if( p.de=='Y' && (i+1)>=p.init)
 					{
-						Fortify_CheckAllMemory();
+						//Fortify_CheckAllMemory();
 	                    dens = ca.PrintDensityAge( p.baseName, argv[1], p.nEvals);
                     
 						//prom += dens;
@@ -317,7 +317,7 @@ int main(int argc, char * argv[])
 			
 	}
 	return 0;
-	Fortify_LeaveScope();
+	//Fortify_LeaveScope();
 }
 
 

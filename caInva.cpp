@@ -21,7 +21,7 @@
 #include "caInva.hpp"
 #include <string>
 
-#include "fortify.h"
+//#include "fortify.h"
 
 #include "bgi.hpp"
 //#include "spectral.h"

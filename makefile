@@ -15,14 +15,14 @@ X11LIBS=-L$(X11BASE)/lib -lX11
 
 SDLDEFS = -D__XWIN__
 
-I_DIRS=-I../../fortify -I.. -I../../randlib/src -I../../SpatialAnalysis
+I_DIRS=-I.. -I../../SpatialAnalysis
 P_DEFS=-DGRAPHICS -DPERIODIC_BOUNDARY
 
 #CFLAGS = -O3 -Wall -Ic:/cpp/fortify -Ic:/cpp/canew -DGRAPHICS -DFORTIFY -fexternal-templates 
 CXXFLAGS = -g -Wall $(I_DIRS) $(X11INCS)  $(SDLDEFS) $(P_DEFS)
 
-O = bgi.o cabase.o caInva.o caInvaIO.o caInvaStats.o com.o fortify.o\
-	linpack.o mcaInva.o Period2d.o Polar2D.o randlib.o RipleyTriangle.o\
+O = bgi.o cabase.o caInva.o caInvaIO.o caInvaStats.o \
+	mcaInva.o Period2d.o Polar2D.o RipleyTriangle.o\
 	Spec2D.o spekout.o
 
 
@@ -47,22 +47,15 @@ bgi.o: bgi.cpp
 
 caInvaIO.o: caInvaIO.cpp
 
-caInvaStats.o: caInvaStats.cpp
+caInvaStats.o: caInvaStats.cpp Spectral.h
 
 RipleyTriangle.o: RipleyTriangle.cpp
 
-Period2d.o: Period2d.cpp
+Period2d.o: Period2d.cpp Spectral.h
 
-Polar2D.o: Polar2D.cpp
+Polar2D.o: Polar2D.cpp Spectral.h
 
-Spec2D.o: Spec2D.cpp
+Spec2D.o: Spec2D.cpp Spectral.h
 
-spekout.o: spekout.cpp
+spekout.o: spekout.cpp Spectral.h
 
-fortify.o : fortify.cpp fortify.h ufortify.h
-
-com.o : com.c
-
-linpack.o : linpack.c
-
-randlib.o : randlib.c
