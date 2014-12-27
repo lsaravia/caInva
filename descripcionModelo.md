@@ -2,8 +2,8 @@
 
 gcainva file.ctl file.inp
 
-ARCHIVO ctl
------------
+## ARCHIVO ctl
+
 nRuns		: numero de corridas con este set de parametros
 
 nEvals		: numero de pasos de las corridas (tiempo maximo)
@@ -48,16 +48,16 @@ calcY		: Coordenada Y
 calcXLen	: Ancho de la ventana para el calculo
 calcYLen	: Profundidad de la ventana para el calculo
 
-pomac		: [Y/N] Este es el modo POMAC donde el output es una sola linea con los parametros 
-		  y los criterios para evaluacion del modelo.
+pomac		: [Y/N] Este es el modo POMAC donde el output es una sola linea con los parametros y los criterios para evaluacion del modelo.
 
 pomacFile	: Nombre de archivo donde va a parar el output del modelo.
 
+inp/lin: nombre de archivo de parametros de las especies
 
+## ARCHIVO sed
 
-inp/lin: archivo de parametros de las especies
+Archivo de condiciones iniciales -> Posiciones espaciales, especie, edad, Habitat.
 
-sed: archivo de condiciones iniciales -> Posiciones espaciales, especie, edad, Habitat.
 	La estructura es la siguiente 
 
 	DIMX	DIMY
@@ -86,91 +86,96 @@ set: archivo de condiciones iniciales -> siembra al azar individuos de cierta es
 	especie edad cantidad "posicion x maxima" habitat
 	
 
-# Archivo PARAMETROS de simulaciones (.inp)
+## Archivo parámetros de especies (.inp)
 
-sp MaximunSurvivalDistance AdultAge PJuvenilMortality PAdultMortality MeanDispersalDistance ParmDispersal NRecruits DispersalNorm NeighSurvivalDistance NeighSurvivalSlope NeighSurvivalOrd ShadeTolerance
+Está compuesto por líneas con la siguiente estructura:
 
-# PARAMETROS de ESPECIES
-sp: numero de especie menos 1 
+	sp MaximunSurvivalDistance AdultAge PJuvenilMortality PAdultMortality MeanDispersalDistance ParmDispersal NRecruits DispersalNorm NeighSurvivalDistance NeighSurvivalSlope NeighSurvivalOrd ShadeTolerance
 
-spName:
-	Nombre de la especie (TAL/COR)
+* El significado de los parametros es:
 
-MaximunSurvivalDistance: 
-	Distancia máxima, a la que un adulto puede influir en la mortalidad de los juveniles
+	sp: numero de especie menos 1 
 
-AdultAge: 
-	Edad a partir de la cual el individuo empieza a reproducirse. Habria que sumarle el 
-	lag debido a que en el modelo los adultos producen individuos de 140 cm de altura, 
-	o sea sumar el tiempo que tardan en llegar a 140.
+	spName:
+		Nombre de la especie 
 
-PJuvenilMortality: 
-	Probabilidad de muerte de 1 individuo juvenil.
+	MaximunSurvivalDistance: 
+		Distancia máxima, a la que un adulto puede influir en la mortalidad de los juveniles
 
-PAdultMortality: 
-	Probabilidad de muerte de 1 individuo Adulto.
+	AdultAge: 
+		Edad a partir de la cual el individuo empieza a reproducirse. Habria que sumarle el 
+		lag debido a que en el modelo los adultos producen individuos de 140 cm de altura, 
+		o sea sumar el tiempo que tardan en llegar a 140.
 
-MeanDispersalDistance: 
-	Distancia de dispersion media (LA DISTANCIA MAXIMA para dispersion E!!!!!!!)
+	PJuvenilMortality: 
+		Probabilidad de muerte de 1 individuo juvenil.
 
-ParmDispersal: 
-	NO USADO porque la dispersion esta fija en E!!!!!!!!!!!!!!!!!!!!!!!!!
-	En dipersion gamma (G) es el parametro "n" (shape) de la distribucion
-	En dispersion gaussiana es la desviacion estandard de la distribucion
-	
+	PAdultMortality: 
+		Probabilidad de muerte de 1 individuo Adulto.
 
-NRecruits:
-	Cantidad de nuevos reclutas producidos por individuo adulto por evento reproductivo
+	MeanDispersalDistance: 
+		Distancia de dispersion media (LA DISTANCIA MAXIMA para dispersion E!!!!!!!)
 
-DispersalNorm: 
-	Quedo fija en E!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	Distribucion de los reclutas a partir de los individuos adultos.
-	
-	E: Norma Euclidiana, se dispersan a una distancia MAXIMA = MeanDispersalDistance, 
-	   calculando la distancia euclidiana.
-	   
-	N: Von Newman (Norma 1), rombos equivalente a los cuatro vecinos mas cercanos.
-	
-	M: Moore (Norma Infinito), cuadrado de lado MeanDispersalDistance*2+1 equivalente a
-	   los 8 vecinos mas cercanos
-	   
-	X: Distribucion exponencial, el parametro corresponde a la media
-	
-	G: Distribucion Gamma 
-	
-	U: Distribucion Normal
-	
-NeighSurvivalDistance:
-	Distancia que utiliza para evaluar el entorno en el cual influye la densidad para el 
-	calculo de la mortalidad densodependiente, o la presencia de adultos segun el parametro,
-	ShadeTolerance.
-
-NeighSurvivalSlopeAd
-	Mortalidad Densodependiente producida por inhibicion de los adultos: la simulacion consiste
-	en recorrer el entorno de un adulto a la distancia Dist, y evaluar la mortalidad de los 
-	juveniles de acuerdo a Pm.
-
-	Dist = NeighSurvivalDistance + ShadeTolerance * (ActualAge-AdultAge)
-	Si Dist>MaximunSurvivalDistance -> Dist=MaximunSurvivalDistance
-
-	En la version de CaInvaFullMortality
-	Pm = NeighSurvivalSlopeAd*na
-	na: Numero de adultos en el entorno determinado por Dist
-	    
-	En la version CaInva
-	Pm = NeighSurvivalSlopeAd
-	
+	ParmDispersal: 
+		NO USADO porque la dispersion esta fija en E!!!!!!!!!!!!!!!!!!!!!!!!!
+		En dipersion gamma (G) es el parametro "n" (shape) de la distribucion
+		En dispersion gaussiana es la desviacion estandard de la distribucion
 		
-NeighSurvivalSlopeJu
-	Mortalidad Densodependiente producida por competencia entre juveniles:
-	Pm = PJuvenilMortality + NeighSurvivalSlope*nj
-	nj: Nro de juveniles en el entorno determinado por NeighSurvivalDistance
+
+	NRecruits:
+		Cantidad de nuevos reclutas producidos por individuo adulto por evento reproductivo
+
+	DispersalNorm: 
+
+		Solamente estan implementados E & X 
+
+		Distribucion de los reclutas a partir de los individuos adultos.
+		
+		E: Norma Euclidiana, se dispersan a una distancia MAXIMA = MeanDispersalDistance, 
+		   calculando la distancia euclidiana.
+		   
+		N: Von Newman (Norma 1), rombos equivalente a los cuatro vecinos mas cercanos.
+		
+		M: Moore (Norma Infinito), cuadrado de lado MeanDispersalDistance*2+1 equivalente a
+		   los 8 vecinos mas cercanos
+		   
+		X: Distribucion exponencial, el parametro corresponde a la media
+		
+		G: Distribucion Gamma 
+		
+		U: Distribucion Normal
+		
+	NeighSurvivalDistance:
+		Distancia que utiliza para evaluar el entorno en el cual influye la densidad para el 
+		calculo de la mortalidad densodependiente, o la presencia de adultos segun el parametro,
+		ShadeTolerance.
+
+	NeighSurvivalSlopeAd
+		Mortalidad Densodependiente producida por inhibicion de los adultos: la simulacion consiste
+		en recorrer el entorno de un adulto a la distancia Dist, y evaluar la mortalidad de los 
+		juveniles de acuerdo a Pm.
+
+		Dist = NeighSurvivalDistance + ShadeTolerance * (ActualAge-AdultAge)
+		Si Dist>MaximunSurvivalDistance -> Dist=MaximunSurvivalDistance
+
+		En la version de CaInvaFullMortality
+		Pm = NeighSurvivalSlopeAd*na
+		na: Numero de adultos en el entorno determinado por Dist
+		    
+		En la version CaInva
+		Pm = NeighSurvivalSlopeAd
+		
+			
+	NeighSurvivalSlopeJu
+		Mortalidad Densodependiente producida por competencia entre juveniles:
+		Pm = PJuvenilMortality + NeighSurvivalSlope*nj
+		nj: Nro de juveniles en el entorno determinado por NeighSurvivalDistance
 
 
 
-ShadeTolerance
-	Aumento del entorno de influencia de los adultos sobre los juveniles con la edad.
-	kn = NeighSurvivalDistance + ShadeTolerance*(ActualAge-AdultAge)
+	ShadeTolerance
+		Aumento del entorno de influencia de los adultos sobre los juveniles con la edad.
+		kn = NeighSurvivalDistance + ShadeTolerance*(ActualAge-AdultAge)
 
 
 //	
