@@ -21,8 +21,8 @@ P_DEFS=-DGRAPHICS -DPERIODIC_BOUNDARY
 #CFLAGS = -O3 -Wall -Ic:/cpp/fortify -Ic:/cpp/canew -DGRAPHICS -DFORTIFY -fexternal-templates 
 CXXFLAGS = -g -Wall $(I_DIRS) $(X11INCS)  $(SDLDEFS) $(P_DEFS)
 
-O = bgi.o cabase.o caInva.o caInvaIO.o caInvaStats.o com.o fortify.o\
-	linpack.o mcaInva.o Period2d.o Polar2D.o randlib.o RipleyTriangle.o\
+O = bgi.o cabase.o caInva.o caInvaIO.o caInvaStats.o \
+	mcaInva.o Period2d.o Polar2D.o RipleyTriangle.o\
 	Spec2D.o spekout.o
 
 
@@ -59,10 +59,3 @@ Spec2D.o: Spec2D.cpp
 
 spekout.o: spekout.cpp
 
-fortify.o : fortify.cpp fortify.h ufortify.h
-
-com.o : com.c
-
-linpack.o : linpack.c
-
-randlib.o : randlib.c

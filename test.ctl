@@ -1,9 +1,9 @@
-DimX 		200 
-dimY 		200
+DimX 		50 
+dimY 		50
 nRuns 		1
 nEvals 		200
 rndSeed		5
-gr		Y
+gr		N
 inter		10
 init		1
 de		Y

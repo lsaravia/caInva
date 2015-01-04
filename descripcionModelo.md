@@ -92,7 +92,7 @@ Está compuesto por líneas con la siguiente estructura:
 
 	sp MaximunSurvivalDistance AdultAge PJuvenilMortality PAdultMortality MeanDispersalDistance ParmDispersal NRecruits DispersalNorm NeighSurvivalDistance NeighSurvivalSlope NeighSurvivalOrd ShadeTolerance
 
-* El significado de los parametros es:
+### El significado de los parametros es:
 
 	sp: numero de especie menos 1 
 
@@ -108,10 +108,10 @@ Está compuesto por líneas con la siguiente estructura:
 		o sea sumar el tiempo que tardan en llegar a 140.
 
 	PJuvenilMortality: 
-		Probabilidad de muerte de 1 individuo juvenil.
+		Probabilidad de muerte de 1 individuo juvenil (densoindependiente).
 
 	PAdultMortality: 
-		Probabilidad de muerte de 1 individuo Adulto.
+		Probabilidad de muerte de 1 individuo Adulto (densoindependiente).
 
 	MeanDispersalDistance: 
 		Distancia de dispersion media (LA DISTANCIA MAXIMA para dispersion E!!!!!!!)
@@ -123,6 +123,7 @@ Está compuesto por líneas con la siguiente estructura:
 		
 
 	NRecruits:
+
 		Cantidad de nuevos reclutas producidos por individuo adulto por evento reproductivo
 
 	DispersalNorm: 
@@ -146,34 +147,41 @@ Está compuesto por líneas con la siguiente estructura:
 		U: Distribucion Normal
 		
 	NeighSurvivalDistance:
+		
 		Distancia que utiliza para evaluar el entorno en el cual influye la densidad para el 
-		calculo de la mortalidad densodependiente, o la presencia de adultos segun el parametro,
-		ShadeTolerance.
+		calculo de la mortalidad densodependiente, o la presencia de adultos segun el parametro, ShadeTolerance.
 
 	NeighSurvivalSlopeAd
-		Mortalidad Densodependiente producida por inhibicion de los adultos: la simulacion consiste
-		en recorrer el entorno de un adulto a la distancia Dist, y evaluar la mortalidad de los 
-		juveniles de acuerdo a Pm.
+		
+		Mortalidad Densodependiente producida por inhibicion de adultos en adultos.
 
 		Dist = NeighSurvivalDistance + ShadeTolerance * (ActualAge-AdultAge)
 		Si Dist>MaximunSurvivalDistance -> Dist=MaximunSurvivalDistance
 
 		En la version de CaInvaFullMortality
 		Pm = NeighSurvivalSlopeAd*na
-		na: Numero de adultos en el entorno determinado por Dist
+		na: propocion de adultos en el entorno determinado por Dist. 
 		    
 		En la version CaInva
-		Pm = NeighSurvivalSlopeAd
+		Pm = PAdultMortality + NeighSurvivalSlopeAd*na
 		
 			
+	PJuvenilMortality
+	
+		Mortalidad de Juveniles densoindependiente
+
+
 	NeighSurvivalSlopeJu
-		Mortalidad Densodependiente producida por competencia entre juveniles:
-		Pm = PJuvenilMortality + NeighSurvivalSlope*nj
-		nj: Nro de juveniles en el entorno determinado por NeighSurvivalDistance
+
+		Mortalidad Densodependiente producida por influencia de juveniles y adultos. 
+		Deberia sumar la edad para hacerlo equivalente al area basal segun @Comita2009:
+		
+		Pm = PJuvenilMortality+ NeighSurvivalSlopeJu*nj
+		
+		nj: Proporcion de juveniles+adultos en el entorno determinado por NeighSurvivalDistance
 
 
-
-	ShadeTolerance
+	ShadeTolerance (NO IMPLEMENTADO EN ULTIMA VERSION)
 		Aumento del entorno de influencia de los adultos sobre los juveniles con la edad.
 		kn = NeighSurvivalDistance + ShadeTolerance*(ActualAge-AdultAge)
 

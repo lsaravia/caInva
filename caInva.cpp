@@ -216,26 +216,25 @@ inline void CAInva::EvalCell(int x,int y)
 
 void CAInva::Growth(int x,int y)
 {
-	int dx=0,dy=0;
-	unsigned ne;
-	char dn;
-	float rnd,dis,dd,ang,pd;
 
 	ActualSp = Elem(x,y,A);
 	
 	if(ActualSp>0 )
 	{
+
 		int actSp = ActualSp-1;
 		ActualAge = C(x,y).Age;
 		int isAdult=C(x,y).Adult;
 
 		if( isAdult )
 		{
-			dd = Sp[actSp].MeanDispersalDistance; 	// Distancia Media en el caso Exponencial
-													// 			Maxima en Euclidiana o uniforme
+			float rnd,dis,ang;
+			int dx=0,dy=0;
+			float dd = Sp[actSp].MeanDispersalDistance; 	// Distancia Media
+													
 //			pd = Sp[actSp].ParmDispersal; // Parametro n de la Gamma
-			ne = Sp[actSp].NRecruits;
-			dn = Sp[actSp].DispersalNorm;
+			int ne = Sp[actSp].NRecruits;
+			char dn = Sp[actSp].DispersalNorm;
 
 			for(int i=0; i<ne; i++)
 			{
@@ -296,9 +295,9 @@ void CAInva::Colonize(int x,int y)
 //	
 	if( C(x,y).Habitat != NoHabitat )
 	{
-	if( Elem(x,y,A)==0 )
-		if( Elem(x,y,N)==0 )
-			Elem(x,y,N)=ActualSp;
+		if( Elem(x,y,A)==0 )
+			if( Elem(x,y,N)==0 )
+				Elem(x,y,N)=ActualSp;
 	}
 }
 
@@ -323,18 +322,18 @@ int CAInva::Survival(int x, int y)
 
 		if( isAdult )
 		{
-//			if( ActualAge > Sp[actSp].MaximunAge)
-//			{
-//				C(x,y).Elem(0,0,0,0);
-//				return 0;
-//			}
+			// 
+			// Dentro de NeighSurvivalDistance contar proporcion de adultos para calcular mortalidad
+			//
+			//kn = Sp[actSp].NeighSurvivalDistance+ Sp[actSp].ShadeTolerance*(ActualAge-Sp[actSp].AdultAge);
+			//if( kn>Sp[actSp].MaximunSurvivalDistance)
+			//	kn = Sp[actSp].MaximunSurvivalDistance;
 
-			kn = Sp[actSp].NeighSurvivalDistance+ Sp[actSp].ShadeTolerance*(ActualAge-Sp[actSp].AdultAge);
-			if( kn>Sp[actSp].MaximunSurvivalDistance)
-				kn = Sp[actSp].MaximunSurvivalDistance;
 
-            na=1;
-            superficie = M_PI * kn * kn;
+			kn = Sp[actSp].NeighSurvivalDistance;
+			na=0;
+            // Toda la superficie incluyendo NoHabitat
+            // superficie = round(M_PI * kn * kn);
 			if(kn!=0)
 			{
 				for(dx=x-kn; dx <= x+kn; dx++ )
@@ -358,7 +357,7 @@ int CAInva::Survival(int x, int y)
 						{
 							if( C(xx,yy).Habitat != NoHabitat )
                             {
-                            	//superficie++;
+                            	superficie++;
     							if( xx!=x || yy!=y )
     							{
     								int spc = Elem(xx,yy,A);
@@ -366,9 +365,7 @@ int CAInva::Survival(int x, int y)
     								{
     									if( !C(xx,yy).Adult )
     									{
-											Pm = Sp[spc-1].NeighSurvivalSlopeAd*na;
-											if( Rand() < Pm )
-												C(xx,yy).Elem(0,0,0,0);
+    										na++;
     									}
     								}
     							}
@@ -377,13 +374,12 @@ int CAInva::Survival(int x, int y)
 					}
 				}
 			}
-			Pm= Sp[actSp].PAdultMortality;
+			Pm= Sp[actSp].PAdultMortality+Sp[actSp].NeighSurvivalSlopeAd*na/superficie;
 		}
 		else
 		{
-            // Calcula la cantidad de adultos y juveniles que hay en
-            // el entorno definido por NeighSurvivalDistance 
-            //
+            // Dentro del entonrno NeighSurvivalDistance cuenta cantidad de adultos y juveniles 
+            // para calcular proporcion
 			Pm = Sp[actSp].PJuvenilMortality;			
 			kn = Sp[actSp].NeighSurvivalDistance;
 			if(kn!=0)
@@ -414,27 +410,17 @@ int CAInva::Survival(int x, int y)
     								int spc = Elem(xx,yy,A);
     								if( spc>0)
     								{
-    									if( C(xx,yy).Adult )
-    										na++;
-	   									else
-    									{
-//    										int ag = C(xx,yy).Age;
-//
-//		Suma los juveniles mayores o iguales en edad
-//    										
-//    										if( ag >= ActualAge )
-//    											nj++;
-//		Suma Todos los juveniles 
-//    										
+//    									if( C(xx,yy).Adult )
+//    										na++;
+//	   									else
    											nj++;
-    									}
     								}
     							}
 							}
 						}
 					}
 				}
-				Pm = Sp[actSp].PJuvenilMortality + Sp[actSp].NeighSurvivalSlopeJu*nj;
+				Pm = Sp[actSp].PJuvenilMortality + Sp[actSp].NeighSurvivalSlopeJu*nj/superficie;
 			}
 		}
 		
