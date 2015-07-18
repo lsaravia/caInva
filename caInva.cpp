@@ -363,7 +363,7 @@ int CAInva::Survival(int x, int y)
     								int spc = Elem(xx,yy,A);
     								if( spc>0)
     								{
-    									if( !C(xx,yy).Adult )
+    									if( C(xx,yy).Adult )
     									{
     										na++;
     									}
@@ -374,7 +374,7 @@ int CAInva::Survival(int x, int y)
 					}
 				}
 			}
-			Pm= Sp[actSp].PAdultMortality+Sp[actSp].NeighSurvivalSlopeAd*na/superficie;
+			Pm= Sp[actSp].PAdultMortality+Sp[actSp].NeighSurvivalSlopeAd*na/(superficie-1);
 		}
 		else
 		{
@@ -420,7 +420,7 @@ int CAInva::Survival(int x, int y)
 						}
 					}
 				}
-				Pm = Sp[actSp].PJuvenilMortality + Sp[actSp].NeighSurvivalSlopeJu*nj/superficie;
+				Pm = Sp[actSp].PJuvenilMortality + Sp[actSp].NeighSurvivalSlopeJu*nj/(superficie-1);
 			}
 		}
 		

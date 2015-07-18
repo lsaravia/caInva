@@ -90,7 +90,7 @@ set: archivo de condiciones iniciales -> siembra al azar individuos de cierta es
 
 Está compuesto por líneas con la siguiente estructura:
 
-	sp MaximunSurvivalDistance AdultAge PJuvenilMortality PAdultMortality MeanDispersalDistance ParmDispersal NRecruits DispersalNorm NeighSurvivalDistance NeighSurvivalSlope NeighSurvivalOrd ShadeTolerance
+	sp MaximunSurvivalDistance AdultAge PJuvenilMortality PAdultMortality MeanDispersalDistance ParmDispersal NRecruits DispersalNorm NeighSurvivalDistance NeighSurvivalSlopeAd NeighSurvivalSlopeJu ShadeTolerance PColonization
 
 ### El significado de los parametros es:
 

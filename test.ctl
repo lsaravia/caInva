@@ -4,14 +4,14 @@ nRuns 		1
 nEvals 		200
 rndSeed		5
 gr		N
-inter		10
+inter		1
 init		1
 de		Y
 sa		N
 baseName	test
 noSpecies	2
 runLineParms	N
-SetSeedFile	test.set
+SeedFile	t50x50.sed
 calcSpectrum	n
 calcUnivRipleyK	y
 calcX		0
